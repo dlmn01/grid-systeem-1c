@@ -48,7 +48,7 @@ body {
   font-weight: normal;
 }
 
-/* Sidebar */
+
 .sidebar {
   border: 1px solid #000000;
   padding: 10px;
@@ -63,7 +63,7 @@ body {
   text-decoration: underline;
 }
 
-/* Main */
+
 .main {
   border: 1px solid #000000;
   padding: 15px;
@@ -84,7 +84,7 @@ body {
   margin: 20px 0;
 }
 
-/* Footer */
+
 .footer {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
