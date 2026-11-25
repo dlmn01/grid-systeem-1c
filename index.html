@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suli's - Free Online Games</title>
+    <style>
+        body {
+            font-size: 18px;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: #e8e8e8;
+        }
+
+        header {
+            background-color: #1a1a2e;
+            padding: 12px 24px;
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+
+        h1 {
+            color: #ff0000;
+            background-color: #1a1a2e;
+            padding: 10px;
+            margin: 0;
+            font-size: 28px;
+            letter-spacing: 2px;
+        }
+
+        h1 span {
+            color: #ffffff;
+        }
+
+        nav a {
+            color: #cccccc;
+            text-decoration: none;
+            font-size: 14px;
+            margin-left: 16px;
+        }
+
+        nav a:hover {
+            color: #ff0000;
+        }
+
+        p {
+            color: #5c4033;
+            margin: .5rem 0;
+        }
+
+        img {
+            max-width: 50%;
+        }
+
+        .search-bar {
+            background-color: #2d2d44;
+            border: none;
+            border-radius: 24px;
+            padding: 10px 20px;
+            color: white;
+            font-size: 14px;
+            width: 300px;
+            margin-left: auto;
+        }
+
+        .categories {
+            background-color: #ffffff;
+            padding: 12px 24px;
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .categories a {
+            color: #333333;
+            text-decoration: none;
+            font-size: 14px;
+            padding: 6px 14px;
+            border-radius: 20px;
+            background-color: #f0f0f0;
+        }
+
+        .categories a:hover {
+            background-color: #ff0000;
+            color: #ffffff;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 40px 24px 20px;
+        }
+
+        .hero h1 {
+            background-color: transparent;
+            font-size: 36px;
+            padding: 0;
+        }
+
+        .hero p {
+            font-size: 16px;
+            color: #666666;
+            margin: .5rem 0;
+        }
+
+        .hero img {
+            max-width: 50%;
+            border-radius: 12px;
+            margin-top: 12px;
+        }
+
+        .games-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 16px;
+            padding: 20px 24px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .game-card {
+            background-color: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+        .game-card:hover {
+            transform: scale(1.03);
+        }
+
+        .game-card img {
+            max-width: 100%;
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .game-card p {
+            text-align: center;
+            padding: 10px;
+            margin: 0;
+            font-size: 14px;
+            font-weight: bold;
+            color: #333333;
+        }
+
+        .section-title {
+            padding: 20px 24px 10px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title h2 {
+            color: #1a1a2e;
+            font-size: 22px;
+            margin: 0;
+        }
+
+        .popular-list {
+            list-style: none;
+            padding: 0 24px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .popular-list li {
+            padding: 10px 16px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .popular-list li a {
+            color: #333333;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .popular-list li a:hover {
+            color: #ff0000;
+        }
+
+        .popular-list li strong {
+            color: #ff0000;
+            margin-right: 8px;
+        }
+
+        footer {
+            background-color: #1a1a2e;
+            color: #aaaaaa;
+            text-align: center;
+            padding: 24px;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: #cccccc;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            color: #ff0000;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Po<span>ki</span></h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Games</a>
+            <a href="#">Categories</a>
+            <a href="#">Upload</a>
+        </nav>
+        <input class="search-bar" type="text" placeholder="Search games...">
+    </header>
+
+    <div class="categories">
+        <a href="#">Action</a>
+        <a href="#">Adventure</a>
+        <a href="#">Puzzle</a>
+        <a href="#">Racing</a>
+        <a href="#">Sports</a>
+        <a href="#">Strategy</a>
+        <a href="#">Multiplayer</a>
+        <a href="#">Simulation</a>
+    </div>
+
+    <div class="hero">
+        <h1>Free Online Games</h1>
+        <p><strong>Play the best online games for free</strong> on your computer, phone, or tablet. No downloads needed!</p>
+        <img src="https://placehold.co/600x300/ff6b35/ffffff?text=Poki+Games" alt="Poki Games banner">
+    </div>
+
+    <div class="section-title">
+        <h2>Trending Games</h2>
+    </div>
+
+    <div class="games-grid">
+        <div class="game-card">
+            <img src="https://placehold.co/300x200/4ecdc4/ffffff?text=Subway+Surfers" alt="Subway Surfers">
+            <p>Subway Surfers</p>
+        </div>
+        <div class="game-card">
+            <img src="https://placehold.co/300x200/ff6b6b/ffffff?text=Temple+Run" alt="Temple Run">
+            <p>Temple Run</p>
+        </div>
+        <div class="game-card">
+            <img src="https://placehold.co/300x200/45b7d1/ffffff?text=8+Ball+Pool" alt="8 Ball Pool">
+            <p>8 Ball Pool</p>
+        </div>
+        <div class="game-card">
+            <img src="https://placehold.co/300x200/f9ca24/ffffff?text=Crossy+Road" alt="Crossy Road">
+            <p>Crossy Road</p>
+        </div>
+        <div class="game-card">
+            <img src="https://placehold.co/300x200/a29bfe/ffffff?text=Stick+Hero" alt="Stick Hero">
+            <p>Stick Hero</p>
+        </div>
+        <div class="game-card">
+            <img src="https://placehold.co/300x200/fd79a8/ffffff?text=Fireboy" alt="Fireboy and Watergirl">
+            <p>Fireboy and Watergirl</p>
+        </div>
+        <div class="game-card">
+            <img src="https://placehold.co/300x200/00cec9/ffffff?text=Roblox" alt="Roblox">
+            <p>Roblox</p>
+        </div>
+        <div class="game-card">
+            <img src="https://placehold.co/300x200/e17055/ffffff?text=Minecraft" alt="Minecraft">
+            <p>Minecraft</p>
+        </div>
+    </div>
+
+    <div class="section-title">
+        <h2>Most Played</h2>
+    </div>
+
+    <ul class="popular-list">
+        <li><strong>1.</strong> <a href="#">Subway Surfers</a> - Dash through the subway!</li>
+        <li><strong>2.</strong> <a href="#">Temple Run</a> - Run for your life!</li>
+        <li><strong>3.</strong> <a href="#">8 Ball Pool</a> - Billiards multiplayer fun</li>
+        <li><strong>4.</strong> <a href="#">Crossy Road</a> - Help the chicken cross</li>
+        <li><strong>5.</strong> <a href="#">Stick Hero</a> - Build bridges to safety</li>
+    </ul>
+
+    <footer>
+        <p><strong>Poki</strong> - The best place to play free online games</p>
+        <a href="#">About</a>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Contact</a>
+    </footer>
+</body>
+
+</html>
